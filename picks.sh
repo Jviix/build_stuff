@@ -1,21 +1,5 @@
 #!/bin/bash
 
-cd device/samsung/hlte-common
-
-git fetch https://github.com/LineageOS/android_device_samsung_hlte-common refs/changes/30/231030/1 && git cherry-pick FETCH_HEAD
-
-git fetch https://github.com/LineageOS/android_device_samsung_hlte-common refs/changes/18/225618/7 && git cherry-pick FETCH_HEAD
-
-git fetch https://github.com/LineageOS/android_device_samsung_hlte-common refs/changes/19/225619/9 && git cherry-pick FETCH_HEAD
-
-cd && cd PixysOS/device/samsung/msm8974-common
-
-git fetch https://github.com/LineageOS/android_device_samsung_msm8974-common refs/changes/50/231350/1 && git cherry-pick FETCH_HEAD
-
-git fetch https://github.com/LineageOS/android_device_samsung_msm8974-common refs/changes/77/228677/3 && git cherry-pick FETCH_HEAD
-
-git fetch https://github.com/LineageOS/android_device_samsung_msm8974-common refs/changes/16/224916/12 && git cherry-pick FETCH_HEAD
-
 cd && cd PixysOS/bionic
 
 git fetch https://github.com/LineageOS/android_bionic refs/changes/88/229488/3 && git cherry-pick FETCH_HEAD
