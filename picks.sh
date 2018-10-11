@@ -1,0 +1,79 @@
+#!/bin/bash
+
+set -e
+
+source build/envsetup.sh
+
+# -------------- PLATFORM STUFF --------------
+
+# bionic
+losrepopick 229488 # Revert "linker: Make platform text relocations denial optional"
+losrepopick 230099 # Actually restore pre-P mutex behavior
+losrepopick 230762 # bionic: Fix more mutex breakage
+
+# build/kati
+losrepopick 225213 # Do not limit threads upon calling legacy GNU make
+
+# build/make
+losrepopick 222733 # core: Disable vendor restrictions
+losrepopick 222760 # Add LOCAL_AIDL_FLAGS
+losrepopick 222742 # build: Use project pathmap for recovery
+losrepopick 229491 # build: Automatically replace old-style kernel header includes with new header lib
+
+# build/soong
+losrepopick 224613 # soong: Add LOCAL_AIDL_FLAGS handling
+losrepopick 229411 # soong sbox: Add option to allow copying all generated output
+
+# dalvik
+losrepopick 225475 # dexdeps: Add option for --include-lineage-classes.
+losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
+
+# device/qcom/sepolicy
+losrepopick 228566 # qcom: Label vendor files with (vendor|system/vendor) instead of vendor
+losrepopick 228569 # Use set_prop() macro for property sets
+losrepopick 228570 # sepolicy: Allow wcnss_service to set wlan.driver properties
+losrepopick 228571 # sepolicy: allow system_server to read alarm boot prop
+losrepopick 228572 # sepolicy: Allow system_server to 'read' qti_debugfs
+losrepopick 228573 # sepolicy: Add libsdm-disp-vndapis and libsdmutils to SP-HALs
+losrepopick 228574 # sepolicy: Allow thermal-engine to read sysfs_uio[_file]
+losrepopick 228575 # sepolicy: Add libcryptfs_hw to SP HALs
+losrepopick 228576 # sepolicy: Label mpctl_socket as data_file_type
+losrepopick 228578 # sepolicy: rules to allow camera daemon access to app buffer
+losrepopick 228580 # hal_gnss_default: Do not log udp socket failures
+losrepopick 228582 # sepolicy: qti_init_shell needs to read dir too
+losrepopick 228583 # sepolicy: allow vold to read persist dirs
+losrepopick 228584 # sepolicy: Fix video4linux "name" node labeling
+losrepopick 228585 # sepolicy: Allow mm-qcamerad to access v4L "name" node
+losrepopick 228586 # common: Fix labelling of lcd-backlight
+losrepopick 228587 # sepolicy: Allow perf HAL to set freq props
+
+# external/tinycompress
+losrepopick 229414 # tinycompress: Use generated kernel headers
+
+# hardware/interfaces
+losrepopick 225506 # Camed HAL extension: Added support in HIDL for Extended FD.
+losrepopick 225507 # camera: Only link and use vendor.qti.hardware.camera.device if specified
+
+# hardware/custom/interfaces
+losrepopick 223374 # interfaces: Add 2.0 livedisplay interfaces
+losrepopick 223410 # interfaces: Add touch HIDL interface definitions
+losrepopick 223411 # interfaces: Add id HAL definition
+
+# hardware/qcom/audio
+losrepopick 230749 # audio: Use generated kernel headers
+
+# hardware/qcom/audio-caf/msm8974
+losrepopick 223436 # Add -Wno-error to compile with global -Werror.
+
+# hardware/qcom/bt-caf
+losrepopick 226658 # Don't build libbt-hidlclient for OSS builds
+
+# hardware/qcom/media
+losrepopick 230750 # media: Use generated kernel headers
+
+# system/netd
+losrepopick 231201 # Revert "Don't look up the main table any more."
+
+# system/sepolicy
+losrepopick 223746 # Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+losrepopick 223748 # Build sepolicy tools with Android.bp.
