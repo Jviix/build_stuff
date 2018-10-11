@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 source build/envsetup.sh
 
 # -------------- PLATFORM STUFF --------------
@@ -10,9 +8,6 @@ source build/envsetup.sh
 losrepopick 229488 # Revert "linker: Make platform text relocations denial optional"
 losrepopick 230099 # Actually restore pre-P mutex behavior
 losrepopick 230762 # bionic: Fix more mutex breakage
-
-# build/kati
-losrepopick 225213 # Do not limit threads upon calling legacy GNU make
 
 # build/make
 losrepopick 222733 # core: Disable vendor restrictions
@@ -25,7 +20,6 @@ losrepopick 224613 # soong: Add LOCAL_AIDL_FLAGS handling
 losrepopick 229411 # soong sbox: Add option to allow copying all generated output
 
 # dalvik
-losrepopick 225475 # dexdeps: Add option for --include-lineage-classes.
 losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
 
 # device/qcom/sepolicy
@@ -54,19 +48,8 @@ losrepopick 229414 # tinycompress: Use generated kernel headers
 losrepopick 225506 # Camed HAL extension: Added support in HIDL for Extended FD.
 losrepopick 225507 # camera: Only link and use vendor.qti.hardware.camera.device if specified
 
-# hardware/custom/interfaces
-losrepopick 223374 # interfaces: Add 2.0 livedisplay interfaces
-losrepopick 223410 # interfaces: Add touch HIDL interface definitions
-losrepopick 223411 # interfaces: Add id HAL definition
-
 # hardware/qcom/audio
 losrepopick 230749 # audio: Use generated kernel headers
-
-# hardware/qcom/audio-caf/msm8974
-losrepopick 223436 # Add -Wno-error to compile with global -Werror.
-
-# hardware/qcom/bt-caf
-losrepopick 226658 # Don't build libbt-hidlclient for OSS builds
 
 # hardware/qcom/media
 losrepopick 230750 # media: Use generated kernel headers
