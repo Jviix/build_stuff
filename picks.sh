@@ -5,7 +5,6 @@ source build/envsetup.sh
 # -------------- PLATFORM STUFF --------------
 
 # bionic
-losrepopick 229488 # Revert "linker: Make platform text relocations denial optional"
 losrepopick 230099 # Actually restore pre-P mutex behavior
 losrepopick 230762 # bionic: Fix more mutex breakage
 
