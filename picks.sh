@@ -58,3 +58,6 @@ losrepopick 231201 # Revert "Don't look up the main table any more."
 # system/sepolicy
 losrepopick 223746 # Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
 losrepopick 223748 # Build sepolicy tools with Android.bp.
+
+# vendor/qcom/opensource/cryptfs_hw
+losrepopick 230271 # cryptfs_hw: Use generated kernel headers
