@@ -46,7 +46,6 @@ losrepopick 229414 # tinycompress: Use generated kernel headers
 
 # hardware/interfaces
 losrepopick 225506 # Camed HAL extension: Added support in HIDL for Extended FD.
-losrepopick 225507 # camera: Only link and use vendor.qti.hardware.camera.device if specified
 
 # hardware/qcom/audio
 losrepopick 230749 # audio: Use generated kernel headers
