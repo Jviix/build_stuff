@@ -46,19 +46,9 @@ cd && cd PixysOS/hardware/qcom/audio-caf/msm8974
 
 git fetch https://github.com/LineageOS/android_hardware_qcom_audio refs/changes/36/223436/5 && git cherry-pick FETCH_HEAD
 
-cd && cd PixysOS/hardware/qcom/display-caf/msm8974
-
-git fetch https://github.com/LineageOS/android_hardware_qcom_display refs/changes/81/226481/2 && git cherry-pick FETCH_HEAD
-
-git fetch https://github.com/LineageOS/android_hardware_qcom_display refs/changes/82/226482/1 && git cherry-pick FETCH_HEAD
-
 cd && cd PixysOS/hardware/qcom/media
 
 git fetch https://github.com/LineageOS/android_hardware_qcom_media refs/changes/50/230750/2 && git cherry-pick FETCH_HEAD
-
-cd && cd PixysOS/hardware/qcom/media-caf/msm8974
-
-git fetch https://github.com/LineageOS/android_hardware_qcom_media refs/changes/41/223441/1 && git cherry-pick FETCH_HEAD
 
 cd && cd PixysOS/system/netd
 
@@ -70,4 +60,4 @@ git fetch https://github.com/LineageOS/android_system_sepolicy refs/changes/46/2
 
 git fetch https://github.com/LineageOS/android_system_sepolicy refs/changes/48/223748/6 && git cherry-pick FETCH_HEAD
 
-cd && cd PixysOS 
+cd && cd PixysOS
