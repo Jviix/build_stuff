@@ -47,3 +47,7 @@ losrepopick 231201 # Revert "Don't look up the main table any more."
 # system/sepolicy
 losrepopick 223746 # Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
 losrepopick 223748 # Build sepolicy tools with Android.bp.
+
+# -------------- TOPIC STUFF --------------
+
+repopick -t pie-mode-bits
