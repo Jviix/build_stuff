@@ -13,10 +13,8 @@ losrepopick 222733 # core: Disable vendor restrictions
 losrepopick 222760 # Add LOCAL_AIDL_FLAGS
 losrepopick 222742 # build: Use project pathmap for recovery
 
-
 # build/soong
 losrepopick 224613 # soong: Add LOCAL_AIDL_FLAGS handling
-
 
 # dalvik
 losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
@@ -40,17 +38,8 @@ losrepopick 228585 # sepolicy: Allow mm-qcamerad to access v4L "name" node
 losrepopick 228586 # common: Fix labelling of lcd-backlight
 losrepopick 228587 # sepolicy: Allow perf HAL to set freq props
 
-
-
-
 # hardware/interfaces
 losrepopick 225506 # Camed HAL extension: Added support in HIDL for Extended FD.
-
-
-
-
-
-
 
 # system/netd
 losrepopick 231201 # Revert "Don't look up the main table any more."
