@@ -12,11 +12,11 @@ losrepopick 230762 # bionic: Fix more mutex breakage
 losrepopick 222733 # core: Disable vendor restrictions
 losrepopick 222760 # Add LOCAL_AIDL_FLAGS
 losrepopick 222742 # build: Use project pathmap for recovery
-losrepopick 229491 # build: Automatically replace old-style kernel header includes with new header lib
+
 
 # build/soong
 losrepopick 224613 # soong: Add LOCAL_AIDL_FLAGS handling
-losrepopick 229411 # soong sbox: Add option to allow copying all generated output
+
 
 # dalvik
 losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
@@ -40,17 +40,17 @@ losrepopick 228585 # sepolicy: Allow mm-qcamerad to access v4L "name" node
 losrepopick 228586 # common: Fix labelling of lcd-backlight
 losrepopick 228587 # sepolicy: Allow perf HAL to set freq props
 
-# external/tinycompress
-losrepopick 229414 # tinycompress: Use generated kernel headers
+
+
 
 # hardware/interfaces
 losrepopick 225506 # Camed HAL extension: Added support in HIDL for Extended FD.
 
-# hardware/qcom/audio
-losrepopick 230749 # audio: Use generated kernel headers
 
-# hardware/qcom/media
-losrepopick 230750 # media: Use generated kernel headers
+
+
+
+
 
 # system/netd
 losrepopick 231201 # Revert "Don't look up the main table any more."
