@@ -50,4 +50,4 @@ losrepopick 223748 # Build sepolicy tools with Android.bp.
 
 # -------------- TOPIC STUFF --------------
 
-repopick -t pie-mode-bits
+losrepopick -t pie-mode-bits
