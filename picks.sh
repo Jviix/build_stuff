@@ -2,8 +2,6 @@
 
 cd && cd PixysOS/bionic
 
-git fetch https://github.com/LineageOS/android_bionic refs/changes/88/229488/3 && git cherry-pick FETCH_HEAD
-
 git fetch https://github.com/LineageOS/android_bionic refs/changes/99/230099/3 && git cherry-pick FETCH_HEAD
 
 git fetch https://github.com/LineageOS/android_bionic refs/changes/62/230762/1 && git cherry-pick FETCH_HEAD
@@ -22,17 +20,13 @@ cd && cd PixysOS/dalvik
 
 git fetch https://github.com/LineageOS/android_dalvik refs/changes/76/225476/1 && git cherry-pick FETCH_HEAD
 
-cd && cd PixysOS/hardware/qcom/audio
+#cd && cd PixysOS/hardware/qcom/audio
 
-git fetch https://github.com/LineageOS/android_hardware_qcom_audio refs/changes/49/230749/1 && git cherry-pick FETCH_HEAD
+#git fetch https://github.com/LineageOS/android_hardware_qcom_audio refs/changes/49/230749/1 && git cherry-pick FETCH_HEAD
 
-cd && cd PixysOS/hardware/qcom/audio-caf/msm8974
+#cd && cd PixysOS/hardware/qcom/media
 
-git fetch https://github.com/LineageOS/android_hardware_qcom_audio refs/changes/36/223436/5 && git cherry-pick FETCH_HEAD
-
-cd && cd PixysOS/hardware/qcom/media
-
-git fetch https://github.com/LineageOS/android_hardware_qcom_media refs/changes/50/230750/2 && git cherry-pick FETCH_HEAD
+#git fetch https://github.com/LineageOS/android_hardware_qcom_media refs/changes/50/230750/2 && git cherry-pick FETCH_HEAD
 
 cd && cd PixysOS/system/netd
 
