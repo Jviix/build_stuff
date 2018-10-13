@@ -34,8 +34,6 @@ git fetch https://github.com/LineageOS/android_system_netd refs/changes/01/23120
 
 cd && cd POS/system/sepolicy
 
-git fetch https://github.com/LineageOS/android_system_sepolicy refs/changes/46/223746/6 && git cherry-pick FETCH_HEAD
-
 git fetch https://github.com/LineageOS/android_system_sepolicy refs/changes/48/223748/6 && git cherry-pick FETCH_HEAD
 
 cd && cd POS
