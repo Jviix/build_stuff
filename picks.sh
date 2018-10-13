@@ -6,7 +6,7 @@ source build/envsetup.sh
 
 # bionic
 losrepopick 230099 # Actually restore pre-P mutex behavior
-losrepopick 230762 # bionic: Fix more mutex breakage
+
 
 # build/make
 losrepopick 222760 # Add LOCAL_AIDL_FLAGS
@@ -37,8 +37,8 @@ losrepopick 228585 # sepolicy: Allow mm-qcamerad to access v4L "name" node
 losrepopick 228586 # common: Fix labelling of lcd-backlight
 losrepopick 228587 # sepolicy: Allow perf HAL to set freq props
 
-# system/netd
-losrepopick 231201 # Revert "Don't look up the main table any more."
+
+
 
 # system/sepolicy
 losrepopick 223746 # Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
