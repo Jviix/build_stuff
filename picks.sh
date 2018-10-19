@@ -6,7 +6,6 @@ source build/envsetup.sh
 
 # bionic
 losrepopick 230099 # Actually restore pre-P mutex behavior
-losrepopick 223067 # libc fortify: Ignore open() O_TMPFILE mode bits warning
 
 # build/make
 losrepopick 222760 # Add LOCAL_AIDL_FLAGS
@@ -49,11 +48,7 @@ losrepopick 230832 # Revert "sepol: hostapd is now hal_wifi_hostapd"
 losrepopick 231049 # Change to compile due to hostapd.te removal
 losrepopick 231054 # NFC: Add nfc data file context and rename property
 
-# external/perfetto
-losrepopick 223413 # perfetto_cmd: Resolve missing O_CREAT mode
-
 # system/sepolicy
-losrepopick 223746 # Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
 losrepopick 223748 # Build sepolicy tools with Android.bp.
 
 # -------------- TOPIC STUFF --------------
