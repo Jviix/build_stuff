@@ -21,7 +21,7 @@ losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
 losrepopick 228566 # qcom: Label vendor files with (vendor|system/vendor) instead of vendor
 losrepopick 228569 # Use set_prop() macro for property sets
 losrepopick 228570 # sepolicy: Allow wcnss_service to set wlan.driver properties
-losrepopick 228571 # sepolicy: allow system_server to read alarm boot prop
+
 losrepopick 228572 # sepolicy: Allow system_server to 'read' qti_debugfs
 losrepopick 228573 # sepolicy: Add libsdm-disp-vndapis and libsdmutils to SP-HALs
 losrepopick 228574 # sepolicy: Allow thermal-engine to read sysfs_uio[_file]
