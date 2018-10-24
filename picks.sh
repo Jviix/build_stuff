@@ -21,7 +21,6 @@ losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
 losrepopick 228566 # qcom: Label vendor files with (vendor|system/vendor) instead of vendor
 losrepopick 228569 # Use set_prop() macro for property sets
 losrepopick 228570 # sepolicy: Allow wcnss_service to set wlan.driver properties
-
 losrepopick 228572 # sepolicy: Allow system_server to 'read' qti_debugfs
 losrepopick 228573 # sepolicy: Add libsdm-disp-vndapis and libsdmutils to SP-HALs
 losrepopick 228574 # sepolicy: Allow thermal-engine to read sysfs_uio[_file]
@@ -47,8 +46,10 @@ losrepopick 230834 # legacy: allow init to read /proc/device-tree
 losrepopick 230832 # Revert "sepol: hostapd is now hal_wifi_hostapd"
 losrepopick 231049 # Change to compile due to hostapd.te removal
 losrepopick 231054 # NFC: Add nfc data file context and rename property
+losrepopick 230235 # common: grant DRM HIDL HAL ownership access to /data/{misc,vendor}/media/
 
 # system/sepolicy
 losrepopick 223748 # Build sepolicy tools with Android.bp.
+losrepopick 230151 # Fix storaged access to /sys/block/mmcblk0/stat after c936223c
 
 # -------------- TOPIC STUFF --------------
