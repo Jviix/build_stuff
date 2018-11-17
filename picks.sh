@@ -15,7 +15,13 @@ losrepopick 224613 # soong: Add LOCAL_AIDL_FLAGS handling
 losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
 
 # device/qcom/sepolicy
-losrepopick 228566 # qcom: Label vendor files with (vendor|system/vendor) instead of vendor
+#losrepopick 228566 # qcom: Label vendor files with (vendor|system/vendor) instead of vendor
+#doesn't work. use
+cd device/qcom/sepolicy
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228566/5 && git cherry-pick FETCH_HEAD
+cd
+cd Pixel
+#delete this when losrepopick works.
 losrepopick 228569 # Use set_prop() macro for property sets
 losrepopick 228570 # sepolicy: Allow wcnss_service to set wlan.driver properties
 losrepopick 228572 # sepolicy: Allow system_server to 'read' qti_debugfs
