@@ -19,23 +19,38 @@ losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
 #doesn't work. use
 cd device/qcom/sepolicy
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228566/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228569/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228570/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228572/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228573/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228574/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228575/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228576/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228578/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228580/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228582/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228583/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228584/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228585/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228586/3 && git cherry-pick FETCH_HEAD
+
 cd
 cd Pixel
 #delete this when losrepopick works.
-losrepopick 228569 # Use set_prop() macro for property sets
-losrepopick 228570 # sepolicy: Allow wcnss_service to set wlan.driver properties
-losrepopick 228572 # sepolicy: Allow system_server to 'read' qti_debugfs
-losrepopick 228573 # sepolicy: Add libsdm-disp-vndapis and libsdmutils to SP-HALs
-losrepopick 228574 # sepolicy: Allow thermal-engine to read sysfs_uio[_file]
-losrepopick 228575 # sepolicy: Add libcryptfs_hw to SP HALs
-losrepopick 228576 # sepolicy: Label mpctl_socket as data_file_type
-losrepopick 228578 # sepolicy: rules to allow camera daemon access to app buffer
-losrepopick 228580 # hal_gnss_default: Do not log udp socket failures
-losrepopick 228582 # sepolicy: qti_init_shell needs to read dir too
-losrepopick 228583 # sepolicy: allow vold to read persist dirs
-losrepopick 228584 # sepolicy: Fix video4linux "name" node labeling
-losrepopick 228585 # sepolicy: Allow mm-qcamerad to access v4L "name" node
-losrepopick 228586 # common: Fix labelling of lcd-backlight
+#losrepopick 228569 # Use set_prop() macro for property sets
+#losrepopick 228570 # sepolicy: Allow wcnss_service to set wlan.driver properties
+#losrepopick 228572 # sepolicy: Allow system_server to 'read' qti_debugfs
+#losrepopick 228573 # sepolicy: Add libsdm-disp-vndapis and libsdmutils to SP-HALs
+#losrepopick 228574 # sepolicy: Allow thermal-engine to read sysfs_uio[_file]
+#losrepopick 228575 # sepolicy: Add libcryptfs_hw to SP HALs
+#losrepopick 228576 # sepolicy: Label mpctl_socket as data_file_type
+#losrepopick 228578 # sepolicy: rules to allow camera daemon access to app buffer
+#losrepopick 228580 # hal_gnss_default: Do not log udp socket failures
+#losrepopick 228582 # sepolicy: qti_init_shell needs to read dir too
+#losrepopick 228583 # sepolicy: allow vold to read persist dirs
+#losrepopick 228584 # sepolicy: Fix video4linux "name" node labeling
+#losrepopick 228585 # sepolicy: Allow mm-qcamerad to access v4L "name" node
+#losrepopick 228586 # common: Fix labelling of lcd-backlight
 
 # device/qcom/sepolicy-legacy
 losrepopick 234248 # sepolicy : set write permissions for sysfs_boot_adsp.
