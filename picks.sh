@@ -19,20 +19,20 @@ losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
 #doesn't work. use
 cd device/qcom/sepolicy
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228566/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228569/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228570/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228572/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228573/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228574/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228575/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228576/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228578/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228580/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228582/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228583/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228584/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228585/3 && git cherry-pick FETCH_HEAD
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228586/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/69/228569/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/70/228570/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/72/228572/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/73/228573/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/74/228574/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/75/228575/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/76/228576/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/78/228578/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/80/228580/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/82/228582/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/83/228583/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/84/228584/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/85/228585/3 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/86/228586/3 && git cherry-pick FETCH_HEAD
 
 cd
 cd Pixel
