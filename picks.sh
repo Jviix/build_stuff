@@ -18,7 +18,7 @@ losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
 #losrepopick 228566 # qcom: Label vendor files with (vendor|system/vendor) instead of vendor
 #doesn't work. use
 cd device/qcom/sepolicy
-git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228566/5 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/66/228566/3 && git cherry-pick FETCH_HEAD
 cd
 cd Pixel
 #delete this when losrepopick works.
