@@ -68,3 +68,5 @@ repopick 234190 # netd: Allow devices to opt-out of the tethering active FTP hel
 losrepopick 230151 # Fix storaged access to /sys/block/mmcblk0/stat after c936223c
 
 # -------------- TOPIC STUFF --------------
+
+repopick -t run-barry-run
