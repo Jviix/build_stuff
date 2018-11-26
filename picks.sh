@@ -36,7 +36,7 @@ repopick 1291 # Add create_dir_perms to data files for vendor_init
 repopick 1292 # Remove wifi_data_file from data_between_core_and_vendor_violators
 
 # device/custom/sepolicy
-repopick 1273 # common: Expand labeling of sysfs_vibrator nodes using regex
+repopick 1273 # common: Expand labeling of sysfs_vibrator nodes using genfscon
 repopick 1265 # common: Label and allow init to write to I/O sched tuning nodes
 
 # system/netd
