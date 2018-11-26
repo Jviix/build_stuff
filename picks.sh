@@ -4,16 +4,6 @@ source build/envsetup.sh
 
 # -------------- PLATFORM STUFF --------------
 
-# build/make
-losrepopick 222760 # Add LOCAL_AIDL_FLAGS
-losrepopick 222742 # build: Use project pathmap for recovery
-
-# build/soong
-losrepopick 224613 # soong: Add LOCAL_AIDL_FLAGS handling
-
-# dalvik
-losrepopick 225476 # dexdeps: Ignore static initializers on analysis.
-
 # device/qcom/sepolicy
 repopick 1250 # qcom: Label vendor files with (vendor|system/vendor) instead of vendor
 repopick 1251 # Use set_prop() macro for property sets
@@ -50,5 +40,6 @@ repopick 1285 # netd: Allow devices to opt-out of the tethering active FTP helpe
 # system/sepolicy
 repopick 1283 # sepolicy: Grant mediaextractor access to files over all sdcard fs types
 repopick 1284 # Fix storaged access to /sys/block/mmcblk0/stat after c936223c
+repopick 1286 # Allow init to write to /proc/cpu/alignment
 
 # -------------- TOPIC STUFF --------------
